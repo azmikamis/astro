@@ -1,0 +1,3 @@
+{{ $options := (dict "targetPath" "css/style.css") }}
+{{ $styles := resources.Get "scss/main.scss" | toCSS $options }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
