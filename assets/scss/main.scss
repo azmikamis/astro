@@ -1,3 +1,45 @@
 @import 'base';
 @import 'layout';
 @import 'component';
+
+@media screen and (min-width: 640px) {
+  .logo {
+        padding: 8px;
+  }
+
+  .nav-wrapper {
+        position: static;
+        opacity: 1;
+  }
+
+  .nav-wrapper ul {
+        position: static;
+        transform: none;
+        width: auto;
+        float: right
+  }
+
+  .nav-wrapper ul li {
+        float: left;
+        width: auto;
+  }
+
+  .nav-wrapper nav ul li {
+        display: inline-block;
+        float: left;
+  }
+
+  .nav-wrapper ul li a {
+        padding:0 24px;
+        opacity: 1;
+  }
+
+  .nav-wrapper ul li:last-child a {
+        padding-right:0;
+        margin-right: 4px;
+  }
+
+  .nav-btn {
+        display: none;
+  }
+}
