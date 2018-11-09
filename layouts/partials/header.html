@@ -9,10 +9,9 @@
   </div>
   <div id="nav-wrapper" class="nav-wrapper">
     <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Post</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{- .Name -}}</a></li>
+      {{ end }}
     </ul>
   </div>
 </nav>
